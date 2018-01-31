@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose Test Type"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Verify Acquity"
+                    android:background="@drawable/round_button1"
+                    android:textColor="#fff"
+                    android:layout_marginTop="40dp"/>
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_button1"
+                    android:textColor="#fff"
+                    android:onClick="onDemoTest"
+                    android:text="Demo Test"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Blind Spot Test"
+                    android:onClick="onBlindSpotTestButton"
+                    android:background="@drawable/round_button1"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/btnMainTest"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Main test (24-2)"
+                    android:background="@drawable/round_button1"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_marginTop="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose Eye"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:paddingRight="20dp"
+                        android:textSize="20dp"
+                        android:text="Left"/>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textOff="IP1"
+                        android:textOn="IP2"
+                        android:id="@+id/switchIp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:paddingLeft="20dp"
+                        android:textSize="20dp"
+                        android:text="Right"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
