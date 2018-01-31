@@ -7,16 +7,79 @@
     android:orientation="horizontal">
 
 
-    <ImageView
-        android:background="#ffffff"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:textSize="24dp"
-        android:id="@+id/iv_image"
-        android:textAlignment="center"/>
+        android:paddingLeft="50dp"
+        android:background="@color/white"
+        android:paddingRight="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:weightSum="5"
+            android:padding="20dp" >
+
+            <TextView
+                android:id="@+id/txtOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="*****"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:gravity="center"
+                android:text="*****"
+                android:layout_weight="1"
+                android:paddingTop="20dp"/>
+
+            <TextView
+                android:id="@+id/txtThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:gravity="center"
+                android:text="*****"
+                android:layout_weight="1"
+                android:paddingTop="20dp"/>
+
+            <TextView
+                android:id="@+id/txtFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:gravity="center"
+                android:text="*****"
+                android:layout_weight="1"
+                android:paddingTop="20dp"/>
+
+
+            <TextView
+                android:id="@+id/txtFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:gravity="center"
+                android:text="*****"
+                android:layout_weight="1"
+                android:paddingTop="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
